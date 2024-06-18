@@ -1,0 +1,50 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.table-wrapper {
+  width: max-content;
+}
+
+
+.rdt_TableHeadRow {
+  display: flex;
+  position: relative;
+}
+
+.rdt_TableBody {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.rdt_TableRow {
+  display: flex;
+  position: relative;
+}
+
+.fixed-column {
+  position: sticky;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  border-right: 1px solid #ddd;
+}
+
+.fixed-column:nth-child(2) {
+  left: 50px;  /* Adjust this value based on your column width */
+}
+
+.rdt_TableCol:first-child {
+  width: 50px;  /* Adjust this value based on your column width */
+}
+
+.rdt_TableCol:nth-child(2) {
+  width: 100px;  /* Adjust this value based on your column width */
+}
